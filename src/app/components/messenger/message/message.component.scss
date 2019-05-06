@@ -1,0 +1,48 @@
+$questionBackgroundColor: #f8f8f8;
+$answerBackgroundColor: #fff;
+$answerBorderColor: #a2f392;
+
+:host {
+ display: flex;
+}
+
+.message {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  padding: 1rem;
+  color: grey;
+  margin: 0.3rem 1rem;
+  border: 1px solid grey;
+  border-radius: 30px;
+}
+
+.question {
+  background-color: $questionBackgroundColor; 
+  border-color: darken($answerBackgroundColor, 10%);
+  border-top-left-radius: 0;
+  align-self: flex-start;
+}
+
+.answer {
+  background-color: $answerBackgroundColor;
+  border-color: #ecf5ed;
+  border-width: 2px;
+  margin-left: auto;
+}
+
+.question-img {
+  width: 80%;
+  height: 80%;
+  border-radius: 30px;
+  margin: 0.3rem 1rem;
+  border-color: transparent;
+}
+
+.img-wrapper {
+  align-self: center;
+  
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}

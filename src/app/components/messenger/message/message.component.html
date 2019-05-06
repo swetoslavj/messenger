@@ -1,0 +1,14 @@
+<ng-template #image>
+  <img [src]="message.text" alt="question image" class="question-img">
+</ng-template>
+
+<ng-template #text>
+  <div *ngIf="!isAnswer && isLastMessage" class="img-wrapper">
+    <img [src]="message.logo" alt="user logo">
+  </div>
+  <p class="message" [ngClass]="isAnswer ? 'answer' : 'question'">
+    {{message.text}}
+  </p>
+</ng-template>
+
+<ng-container *ngIf="isImage then image; else text"></ng-container>

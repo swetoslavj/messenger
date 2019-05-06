@@ -1,0 +1,47 @@
+[
+  {
+    "userId": 1,
+    "text": "Did you enjoy your visit in Spain?",
+    "date": 1557068868564
+  },
+  {
+    "userId": 1,
+    "text": "What recommendations you have?",
+    "date": 1557068868564
+  },
+  {
+    "userId": 1,
+    "text": "How many times have you been in Spain?",
+    "date": 1557068868564
+  },
+  {
+    "userId": 2,
+    "text": "https://img.freepik.com/free-photo/beautiful-tropical-beach-summer-season-phuket-thailand-image-nature-background_34362-143.jpg?size=626&ext=jpg",
+    "date": 1557068868564
+  },
+  {
+    "userId": 2,
+    "text": "This was my first visit",
+    "date": 1557068868564
+  },
+  {
+    "userId": 2,
+    "text": "This was my second visit",
+    "date": 1557068868564
+  },
+  {
+    "userId": 2,
+    "text": "This was my third visit",
+    "date": 1557068868564
+  },
+  {
+    "userId": 2,
+    "text": "4-5 times",
+    "date": 1557068868564
+  },
+  {
+    "userId": 2,
+    "text": "6 and more times",
+    "date": 1557068868564
+  }
+]

@@ -1,0 +1,19 @@
+:host {
+  border: 1px solid lighten(grey, 40%);
+  padding: 1rem;
+  flex-basis: 30%;
+}
+
+@media all and (max-width: 1280px) {
+  :host {
+    flex-basis: 50%;
+    height: 90vh;
+    overflow: auto;
+  }
+}
+
+@media all and (max-width: 680px) {
+  :host {
+    flex-basis: 90%;
+  }
+}
