@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from 'src/app/core/services/message.service';
 import { Message } from 'src/app/core/models/message';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 import { User } from 'src/app/core/models/user';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-messenger',
@@ -29,19 +29,13 @@ export class MessengerComponent implements OnInit {
   users: User[];
 
   constructor(
-    private mesageService: MessageService
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
-    this.mesageService.getUsers()
-      .subscribe((users) => {
-        this.users = users;
-
-        this.mesageService.getMessages()
-          .subscribe((messages) => {
-            this.messages = this.setQuestionsLogo(messages);
-          });
-      });
+    let messages = this.route.snapshot.data.messengerData.messages;
+    this.users = this.route.snapshot.data.messengerData.users;
+    this.messages = this.setQuestionsLogo(messages);
   }
 
   setQuestionsLogo(messages) {
